@@ -5,6 +5,7 @@ import Users from "../models/users.js";
 
 export const getAllFish = async (req, res) => {
     try {
+        console.log("i was called")
         const fishList = await Fish.find(); // Fetch all fish records
 
         if (!fishList.length) {
